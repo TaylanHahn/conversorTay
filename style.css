@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #243f23;
+    overflow-x: hidden;
+}
+
+
+header{
+    width: 100%;
+    height: 20%;
+    background-color: #001700;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 2%;
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+header h1{
+    color: #91b88b;
+    text-align: left;
+}
+
+.conver{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 5%;
+    font-size: 2em;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: center;
+    margin: auto;
+    color: #ffffff;
+}
+
+input{
+    padding: 3%;
+    font-size: 0.8em;
+    font-family: sans-serif;
+    font-weight: 600;
+    border:none
+}
+
+button{
+    padding: 5%;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    background-color: #91b88b;
+    border: none;
+    font-weight: 800;
+    color: #001700;
+    border-radius: 30px;
+}
+
+button:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+/*DARK MODE*/
+
+.bodyToggle{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: end; /*Alinhamento horizontal*/
+    align-items: start; /*Alinhamento vertical*/
+    margin: 0;
+    transition: background-color 0.5s ease;
+    padding: 1%;
+    margin-right: 5%;
+}
+
+.toggle-btn{
+    display: none; /*invisível*/
+}
+
+.toggle-label{
+    width: 60px;
+    height: 30px;
+    background-color: #91b88b;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.toggle-label:before{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: url(https://cdn-icons-png.flaticon.com/512/5203/5203555.png);
+    background-size: contain;
+    top: 1px;
+    left: 1px;
+    transition: transform 0.4s ease;
+}
+
+.toggle-btn:checked + .toggle-label{
+    background-color: #243f23;
+}
+
+.toggle-btn:checked + .toggle-label::before{
+    transform: translateX(30px);
+}
+
+
+.dark-mode{
+    background-color: #91b88b;
+}
+
+.dark-mode header{
+    background-color: #6d9068;
+}
+
+.dark-mode h1{
+    color: #001700;
+}
+
+.dark-mode button{
+    background-color: #6d9068;
+}
+
+.dark-mode p{
+    color: #001700;
+}
+
+.dark-mode label{
+    color: #001700;
+}
+
+.dark-mode a{
+    color: #001700;
+}
+
+/*FOOTER*/
+
+.footer {
+    width: 90%;
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    padding: 7%;
+    margin: 0 auto;
+}
+
+.footer-text p {
+    font-family: sans-serif;
+    font-size: 1.1em;
+    font-weight:bolder;
+    color: #001700;
+}
+
+.footer-text a {
+    text-decoration: none;
+}  
+
+.footer-text span{
+    color: #6d9068;
+}
+
+.footer-text span:hover {
+    cursor: pointer;
+    color: #91b88b;
+}

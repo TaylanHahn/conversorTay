@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dolar > Real </title>
+</head>
+
+<body>
+    <header>
+        <div class="bodyToggle">
+        <input type="checkbox" name="#" id="toggle" class="toggle-btn">
+        <label for="toggle" class="toggle-label"></label>
+        </div>
+        <h1>Conversor de Moedas </h1>
+    </header>
+
+<div class="conver">
+    <form action="">
+        <label for="real"> Valor em real (R$) </label>
+        <input type="number" name="" id="real">
+        <br>
+
+        <button onclick="converterDolar() ; return false;"> Converter para dólar </button>
+
+        <p> Valor em dólar ($): <span id="resultado"></span></p>
+    </form>
+</div>
+
+<footer class="footer">
+    <div class="footer-text">
+        <p>Site desenvolvido por <a href="https://www.linkedin.com/in/taylanhahn/?locale=pt_BR"><span>Taylan Hahn Fernandes</span></a> &COPY | 2024</p>
+    </div>
+</footer>
+
+
+<script src="main.js"></script>
+</body>
+
+</html>
